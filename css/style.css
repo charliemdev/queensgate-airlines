@@ -1,0 +1,332 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css2?family=Roboto');
+
+/* Main Styling */
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  background-color: #e6e6e6;
+}
+.container {
+  width: 100%;
+  max-width: 820px;
+  position: absolute;
+  top: 150px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  background-color: #ffffff;
+  margin-bottom: 30px;
+}
+select, input[type="date"], input[type="time"] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: none;
+  border-bottom: 2px solid #0E3661;
+  box-sizing: border-box;
+}
+.input-group {
+  width: 46.5%;
+  float: left;
+  margin: 5px 14px;
+}
+fieldset {
+  border: none;
+  margin-inline-start: 0;
+  margin-inline-end: 0;
+  padding-block-start: 0;
+  padding-inline-start: 0;
+  padding-inline-end: 0;
+  padding-block-end: 0;
+  width: 46.5%;
+  float: left;
+  margin: 14px;
+}
+legend {
+  padding: 10px 0 2px 0;
+  border-bottom: 2px solid #0E3661;
+  margin-bottom: 8px;
+}
+fieldset > label {
+  display: block;
+}
+input[type="submit"] {
+  width: 100%;
+}
+
+/* Header */
+header {
+  background-color: #0E3661;
+  height: 250px;
+  color: #ffffff;
+  width: 100%;
+  box-shadow: inset 0px -4px 5px 0px rgba(0, 0, 0, 0.5);
+}
+.header-container {
+  background-color: #ffffff;
+  padding-right: 30px;
+  height: 51px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  position: relative;
+}
+header h1 {
+  margin-right: auto;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  font-size: 1.5em;
+  font-weight: 200;
+  padding: 10px 31px 0 32px;
+  background-color: #0c2f55;
+}
+.user {
+  padding: 16px 25px 16px 0px;
+  color: #000000;
+}
+.logout {
+  position: relative;
+  padding: 0;
+  list-style-type: none;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  padding-inline-start: 0;
+  background-color: #eaeaea;
+}
+.logout li {
+  padding-top: 16px;
+}
+.logout li a {
+  padding: 16px;
+  color: #0E3661;
+  text-decoration: none;
+}
+
+/* Navigation */
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #eaeaea;
+}
+.nav-link {
+  float: left;
+  width: 50%;
+  border-top: 4px solid #0e3661;
+}
+.nav-link > a {
+  display: block;
+  color: #0E3661;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+.nav-link > a:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.active {
+  background-color: #ffffff;
+  border-bottom: 4px solid #eaeaea;
+  border-top: none;
+}
+.details {
+  width: 100%;
+}
+/* Flight List */
+.flight {
+  text-align: center;
+  padding: 10px;
+  height: 92px;
+}
+.flight a:-webkit-any-link {
+    color: transparent;
+    cursor: pointer;
+    text-decoration: none;
+}
+.departure, .arrival {
+  width: 47%;
+  float: left;
+}
+.travel {
+  width: 6%;
+  float: left;
+  padding: 35px 0;
+}
+.departure > i, .arrival > i, .travel i {
+  color: #0e3661;
+  padding-bottom: 10px;
+}
+.departure h1, .arrival h1 {
+  font-size: 1.1em;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin: 0;
+  padding-bottom: 5px;
+  color: #000000;
+}
+.departure p, .arrival p {
+  margin: 0;
+  padding-bottom: 10px;
+  color: #545454;
+}
+.flight:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+/* Flight Details */
+.flight-header {
+  height: 40px;
+  text-align: center;
+  padding: 10px;
+  color: #0e3661;
+  text-transform: uppercase;
+}
+.flight-header h1 {
+  margin: 0;
+  width: 47%;
+  float: left;
+}
+.flight-header i {
+  width: 6%;
+  float: left;
+  padding: 13px 0;
+}
+.flight-departure, .flight-arrival {
+  width: 47%;
+  float: left;
+}
+.flight-departure h3, .flight-departure p, .flight-arrival h3, .flight-arrival p {
+  padding-left: 40px;
+}
+.flight-info {
+  height: 130px;
+}
+.flight-crew {
+  height: 137px;
+}
+.flight-crew h2 {
+  padding-left: 40px;
+}
+.crew {
+  width: 25%;
+  float: left;
+  text-align: center;
+  background-color: #0e3661;
+  border: 1px solid #ffffff;
+  box-sizing: border-box;
+  color: #ffffff;
+}
+.crew h3 {
+  text-transform: uppercase;
+  margin-bottom: 0;
+}
+.crew p {
+  margin-top: 8px;
+  font-style: italic;
+}
+.add-flight {
+  margin-top: 15px;
+}
+
+/* Login */
+.login-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  height: 600px;
+}
+.login-box {
+  width: 400px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 4px;
+}
+.login-box h1 {
+  margin-right: auto;
+  margin-block-start: 0;
+  margin-block-end: 10px;
+  font-size: 1.5em;
+  font-weight: 200;
+  padding: 10px 0;
+  text-align: center;
+}
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+input[type=button], button, input[type="submit"] {
+  background-color: #0E3661;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+}
+#login {
+  background: rgb(14,54,97);
+  background: -moz-linear-gradient(90deg, rgba(14,54,97,1) 0%, rgba(71,114,161,1) 100%);
+  background: -webkit-linear-gradient(90deg, rgba(14,54,97,1) 0%, rgba(71,114,161,1) 100%);
+  background: linear-gradient(90deg, rgba(14,54,97,1) 0%, rgba(71,114,161,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#0e3661",endColorstr="#4772a1",GradientType=1);
+}
+.error {
+  background-color: #f44336;
+  color: white;
+  padding: 10px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+
+/* 401 */
+#unauthorized {
+  background-color: #343f43;
+}
+.error-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 0 auto;
+  height: 600px;
+}
+.error-box {
+  width: 400px;
+  padding: 20px;
+  border-radius: 4px;
+}
+.error-box h1 {
+  font-size: 14em;
+  margin: 0;
+  color: #f44336;
+  text-shadow: 8px 3px 18px #000000;
+}
+.error-box h2 {
+  text-transform: uppercase;
+  color: #afafaf;
+  font-weight: 200;
+}
+.error-box p {
+  color: white;
+}
+button.btnerror {
+  background-color: #f44336 !important;
+}
+button.btnerror a {
+  color: white;
+  cursor: pointer;
+  text-decoration: none;
+}
